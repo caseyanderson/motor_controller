@@ -11,19 +11,15 @@ int pot_vals[] = {0, 0, 0, 0};
 int val[] = {0, 0, 0, 0};
 int range;
 
-
 void setup() {
 
   Serial.begin(9600);
 
-  // setup analog inputs
+  // setup inputs, outputs
   for ( int i = 0; i < 4; i++ ) {
     pinMode( analog_pins[i], INPUT );
-  }
-
-  // setup digital inputs
-  for ( int i = 0; i < 4; i++ ) {
     pinMode( digital_pins[i], OUTPUT );
+
   }
 
 }
